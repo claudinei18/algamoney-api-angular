@@ -1,14 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="container">
-  <div class="alert alert-success" role="alert">
-    Funcionário adicionado: <strong>{{nome}}</strong>!
-  </div>
-  <div class="form-group">
-    <label>Nome</label>
-    <input type="text" class="form-control" (input)="alterarNome($event)"
-    value="{{nome}}">
-  </div>
+<!--<div class="container">
 
-  <button type="button" class="btn btn-primary" (click)="adicionar()">Adicionar</button>
-</div>
+  <app-funcionario-form (funcionarioAdicionado)="aoAdicionar($event)"></app-funcionario-form>
 
+  <div class="row">
+    <div class="col-2" *ngFor="let funcionario of funcionarios">
+      <app-funcionario-card [funcionario]="funcionario"></app-funcionario-card>
+    </div>
+  </div>
+</div>-->
+<app-navbar></app-navbar>
+<app-lancamentos-pesquisa></app-lancamentos-pesquisa>
+<app-pessoas-pesquisa></app-pessoas-pesquisa>
